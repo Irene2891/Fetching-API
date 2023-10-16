@@ -9,7 +9,7 @@ const pictureDisplay = document.querySelector('.picture_showcase');
 fetch('https://jsonplaceholder.typicode.com/photos')
     .then(response => {
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error('Oops!!! Network Error');
         }
         return response.json();
     })
